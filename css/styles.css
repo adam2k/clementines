@@ -62,10 +62,14 @@ a, a:visited, .mdi {
     -webkit-transition: all 200ms; /* Safari */
     transition: all 200ms;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active, a:focus,
+a:hover .mdi, a:active .mdi,
+a:focus .mdi {
     color: #A55214;
 }
-a::selection, h1::selection, h2::selection, h3::selection, h5::selection, h5::selection, h6::selection, p::selection, img::selection, a span::selection, a i.mdi::selection {
+a::selection, h1::selection, h2::selection, h3::selection, h5::selection,
+h5::selection, h6::selection, p::selection, img::selection, a span::selection,
+a i.mdi::selection,  {
     background-color: #FF9331;
     color: #fff;
 }
