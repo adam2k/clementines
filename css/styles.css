@@ -30,7 +30,7 @@ h1 {
 }
 h2 {
     margin: 0;
-    padding: 1.5rem 0 0.75rem;
+    padding: 1rem 0 0.75rem;
     text-align: center;
 		color: #A55214;
 }
@@ -90,7 +90,7 @@ header, footer {
 
 .logo {
     margin: auto auto;
-    padding: 0 0 1rem;
+    padding: 0;
 }
 .logo img {
     width: 100%;
