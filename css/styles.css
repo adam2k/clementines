@@ -90,7 +90,7 @@ header, footer {
 
 .logo {
     margin: auto auto;
-    padding: 1rem 0;
+    padding: 0 0 1rem;
 }
 .logo img {
     width: 100%;
