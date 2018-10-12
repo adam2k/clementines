@@ -10,7 +10,6 @@
 	font-weight: 800;
 	font-style: normal;
 }
-
 body, html {
     margin: 0;
     padding: 0;
@@ -32,21 +31,21 @@ h2 {
     margin: 0;
     padding: 1rem 0 0.75rem;
     text-align: center;
-		color: #A55214;
+	color: #A55214;
 }
 h3 {
-		color: #333;
-		font-size: 0.95rem;
-		padding: 0.25rem 0;
-		margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+    padding: 0.25rem 0;
+    margin: 0;
 }
 h4 {
-		padding: 0.5rem 0;
-		margin: 0;
-		color: #333;
-		font-size: 0.75rem;
-		font-style: italic;
-		text-transform: uppercase;
+    padding: 0.5rem 0;
+    margin: 0;
+    color: #333;
+    font-size: 0.75rem;
+    font-style: italic;
+    text-transform: uppercase;
 }
 p {
     font-size: 1.125rem;
@@ -87,7 +86,6 @@ header, footer {
     flex-direction: column;
     justify-content: center;
 }
-
 .logo {
     margin: auto auto;
     padding: 0;
@@ -100,7 +98,7 @@ header, main, footer {
     margin: auto auto;
 }
 main {
-		max-width: 400px;
+	max-width: 400px;
     display: flex;
     padding: 1rem 1rem 1rem;
     flex-direction: column;
@@ -113,10 +111,10 @@ main section ul,
 main section ul li,
 main section ul li ul,
 main section ul li ul li {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 footer {
     padding-top: 0;
