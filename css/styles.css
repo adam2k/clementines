@@ -14,18 +14,19 @@ body, html {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Pangram', sans-serif;
     background: #fff;
     color: #000;
     font-weight: 400;
 }
 h1 {
-    font-family: 'Pangram', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
+    padding: 1rem 0 0;
     font-weight: 800;
     text-align: center;
     width: 100%;
+	color: #A55214;
 }
 h2 {
     margin: 0;
@@ -115,6 +116,14 @@ main section ul li ul li {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+.menus {
+    display: flex;
+    justify-content: center;
+}
+.menus h2 {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
 }
 footer {
     padding-top: 0;
