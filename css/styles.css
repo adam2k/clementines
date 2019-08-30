@@ -1,16 +1,18 @@
 @font-face {
-	font-family: 'Pangram';
-	src: url('hinted-Pangram-ExtraBold.eot');
-	src: local('Pangram ExtraBold'), local('Pangram-ExtraBold'),
-		url('../fonts/hinted-Pangram-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/hinted-Pangram-ExtraBold.woff2') format('woff2'),
-		url('../fonts/hinted-Pangram-ExtraBold.woff') format('woff'),
-		url('../fonts/hinted-Pangram-ExtraBold.ttf') format('truetype'),
-		url('../fonts/hinted-Pangram-ExtraBold.svg#Pangram-ExtraBold') format('svg');
-	font-weight: 800;
-	font-style: normal;
+    font-family: 'Pangram';
+    src: url('hinted-Pangram-ExtraBold.eot');
+    src: local('Pangram ExtraBold'), local('Pangram-ExtraBold'),
+        url('../fonts/hinted-Pangram-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/hinted-Pangram-ExtraBold.woff2') format('woff2'),
+        url('../fonts/hinted-Pangram-ExtraBold.woff') format('woff'),
+        url('../fonts/hinted-Pangram-ExtraBold.ttf') format('truetype'),
+        url('../fonts/hinted-Pangram-ExtraBold.svg#Pangram-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
 }
-body, html {
+
+body,
+html {
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -19,6 +21,7 @@ body, html {
     color: #000;
     font-weight: 400;
 }
+
 h1 {
     font-size: 2rem;
     margin: 0;
@@ -26,20 +29,23 @@ h1 {
     font-weight: 800;
     text-align: center;
     width: 100%;
-	color: #A55214;
+    color: #A55214;
 }
+
 h2 {
     margin: 0;
     padding: 1rem 0 0.75rem;
     text-align: center;
-	color: #A55214;
+    color: #A55214;
 }
+
 h3 {
     color: #333;
     font-size: 0.95rem;
     padding: 0.25rem 0;
     margin: 0;
 }
+
 h4 {
     padding: 0.5rem 0;
     margin: 0;
@@ -48,66 +54,127 @@ h4 {
     font-style: italic;
     text-transform: uppercase;
 }
+
 p {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin: 0;
     padding: 0.5rem 0;
 }
-a, a:visited, .mdi {
+
+a,
+a:visited,
+.mdi {
     font-size: 1.25rem;
     text-decoration: none;
     border: none;
     color: #FF9331;
-    -webkit-transition: all 200ms; /* Safari */
+    -webkit-transition: all 200ms;
+    /* Safari */
     transition: all 200ms;
 }
-a:hover, a:active, a:focus,
-a:hover .mdi, a:active .mdi,
+
+a:hover,
+a:active,
+a:focus,
+a:hover .mdi,
+a:active .mdi,
 a:focus .mdi {
     color: #A55214;
 }
-a::selection, h1::selection, h2::selection, h3::selection, h5::selection,
-h5::selection, h6::selection, p::selection, img::selection, a span::selection,
-a i.mdi::selection,  {
+
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h5::selection,
+h5::selection,
+h6::selection,
+p::selection,
+img::selection,
+a span::selection,
+a i.mdi::selection,
+    {
     background-color: #FF9331;
     color: #fff;
 }
+
 header {
-    background-color: #FFF;
+    display: block;
+    position: fixed;
+    width: 100%;
+    margin: auto auto;
+    background-color: #FF9331;
 }
-header, footer {
+
+.inner-header {
+    max-width: 60rem;
+    padding: 1rem;
+    margin: auto auto;
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+footer {
     margin: 0;
     padding: 0.5rem 1rem;
 }
-.inner-header, .inner-footer {
+
+.inner-footer {
     margin: auto auto;
     padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .logo {
     margin: auto auto;
     padding: 0;
 }
+
 .logo img {
     width: 100%;
 }
-header, main, footer {
+
+main,
+footer {
     max-width: 400px;
     margin: auto auto;
 }
+
 main {
-	max-width: 400px;
+    max-width: 400px;
     display: flex;
     padding: 1rem 1rem 1rem;
     flex-direction: column;
 }
+
+main.has-banner {
+    padding-top: 15rem;
+}
+
+@media (min-width: 600px) {
+    main.has-banner {
+        padding-top: 12rem;
+    }
+}
+
+@media (min-width: 900px) {
+    main.has-banner {
+        padding-top: 10rem;
+    }
+}
+
 main section {
     max-width: 600px;
     margin: auto auto;
 }
+
 main section ul,
 main section ul li,
 main section ul li ul,
@@ -117,21 +184,26 @@ main section ul li ul li {
     padding: 0;
     text-align: center;
 }
+
 .menus {
     display: flex;
     justify-content: center;
 }
+
 .menus h2 {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
 }
+
 footer {
     padding-top: 0;
     background: #fff;
 }
+
 .inner-footer {
     padding-top: 0;
 }
+
 .inner-footer ul {
     display: flex;
     flex-direction: row;
@@ -141,16 +213,19 @@ footer {
     margin: 0;
     padding: 0;
 }
+
 .inner-footer ul li {
     display: flex;
     flex-basis: 50%;
 }
+
 footer a {
     padding: 0.5rem 0;
     display: inline-flex;
     justify-content: center;
     margin: auto auto;
 }
+
 footer a i {
     padding-right: 0.5rem;
 }
