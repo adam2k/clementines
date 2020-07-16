@@ -8,38 +8,49 @@
     <meta name="keywords" content="Clementine, Clementine's, Riverview, Norfolk, VA, Virginia, Food, Restaurants, Bar">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="hny creative">
-    <meta http-equiv="last-modified" content="Fri, 27 Mar 2019 01:05:49 EDT" />
+    <meta http-equiv="last-modified" content="Wed, 15 Jul 2019 11:32:49 EDT" />
     <meta http-equiv="cache-control" content="Private" />
     <meta http-equiv="expires" content="86000" />
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MNQ6ST2');
+        function removeHeader() {
+            const header = document.getElementById("header");
+            header.remove(); 
+        }
     </script>
-    <!-- End Google Tag Manager -->
 </head>
-
 <body>
     <!--[if lte IE 10]>
-            <p class="browserupgrade">Ah snap! You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNQ6ST2" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <p class="browserupgrade">Ah snap! You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <header id="header">
+        <div class="inner-header">
+            <h1>Hey kids! Who’s ready to eat?!</h1>
+            <p>
+                Well, in order to be ready, you’re gonna have to follow some rules!  This may be a lot to read but better you know before you come!
+            </p>
+            <ul>
+                <li>
+                    We are only accepting parties of 4 or less. We are a small place and for the time being are only accepting small groups. No matter what your situation, we are only accepting parties of 4 or less!!!
+                </li>
+                <li>
+                    We have inside and outside seating available, all at socially acceptable distances. Obviously, the outside seating will be dependent on the weather.
+                </li>
+                <li>
+                    You must wear a mask unless seated at a table! If you are standing, you will have to wear a mask! If you are unable to wear a mask, then we hope you will enjoy our food to go.
+                </li>
+                <li>
+                    There will be no waiting room inside the restaurant. If you are waiting on a table or to go order, you may wait at one of the benches outside or in the garden center. To make things more comfortable, you will be able to enjoy alcohol while you wait, even while walking around the garden center.
+                </li>
+                <li>
+                    The bar will be for placing to go orders and picking up orders only. No hanging out! If you are waiting for a table, a server will be happy to take your drink order outside.
+                <li>
+                    Again, we are a small place! We were a small place before and now even smaller. We will probably be on a wait at times and although it’s frustrating, there’s just nothing we can do about it. Just know that at the end of the wait lies delicious, mouth watering, award winning food!
+                </li>
+            </ul>
+            <button onclick="removeHeader()">I get it!  Hide this message.</button>
+        </div>
+    </header>
     <main>
         <div class="logo">
             <img src="images/clementines_logo.png" alt="Clementine's at Riverview Logo" />
@@ -140,5 +151,4 @@
         }
     </script>
 </body>
-
 </html>
